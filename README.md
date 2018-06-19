@@ -1,8 +1,9 @@
-# baidupanapi
+# baidupanapi_java
 
 -------------------
 
-#### 参考 https://github.com/xm0625/BaiduPanApi-Java/
+###项目参考 
+https://github.com/xm0625/BaiduPanApi-Java/
 
 
 ###项目简介
