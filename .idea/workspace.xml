@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1deb42d-7577-481d-97d6-2c551ed865e2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/baidupanapi/TestBaiduPanService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/baidupanapi_java.iml" afterPath="$PROJECT_DIR$/.idea/baidupanapi_java.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/baidupanapi/BaiduPanService.java" afterPath="$PROJECT_DIR$/src/main/java/com/baidupanapi/BaiduPanService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/baidupanapi/BaseClass.java" afterPath="$PROJECT_DIR$/src/main/java/com/baidupanapi/BaseClass.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/baidupanapi/BaseData.java" afterPath="$PROJECT_DIR$/src/main/java/com/baidupanapi/BaseData.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/baidupanapi/Downloader.java" afterPath="$PROJECT_DIR$/src/main/java/com/baidupanapi/Downloader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/baidupanapi/TestBaiduPanService.java" afterPath="$PROJECT_DIR$/src/test/java/com/baidupanapi/TestBaiduPanService.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,8 +18,8 @@
       <file leaf-file-name="TestBaiduPanService.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/baidupanapi/TestBaiduPanService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="32" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="32" />
+            <state relative-caret-position="133">
+              <caret line="7" column="8" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -65,8 +59,10 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/baidupanapi/BaseData.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="163">
-              <caret line="43" column="81" lean-forward="false" selection-start-line="43" selection-start-column="81" selection-end-line="43" selection-end-column="81" />
-              <folding />
+              <caret line="43" column="82" lean-forward="false" selection-start-line="43" selection-start-column="59" selection-end-line="43" selection-end-column="82" />
+              <folding>
+                <element signature="e#1809#1825#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -134,11 +130,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/baidupanapi/com/baidupanapi/util/TimeUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/baidupanapi/util/MapUtil.java" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/test/java/com/baidupanapi/TestBaiduPanService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/baidupanapi/BaseData.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/baidupanapi/Downloader.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/baidupanapi/BaseClass.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/baidupanapi/BaiduPanService.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/baidupanapi/TestBaiduPanService.java" />
       </list>
     </option>
   </component>
@@ -379,12 +375,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1529425406359</updated>
-      <workItem from="1529425408790" duration="4459000" />
+      <workItem from="1529425408790" duration="5209000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4459000" />
+    <option name="totallyTimeSpent" value="5209000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -538,14 +534,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/baidupanapi/BaseData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="43" column="81" lean-forward="false" selection-start-line="43" selection-start-column="81" selection-end-line="43" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/baidupanapi/Downloader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="429">
@@ -592,10 +580,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/baidupanapi/BaseData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="43" column="82" lean-forward="false" selection-start-line="43" selection-start-column="59" selection-end-line="43" selection-end-column="82" />
+          <folding>
+            <element signature="e#1809#1825#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/baidupanapi/TestBaiduPanService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="32" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="32" />
+        <state relative-caret-position="133">
+          <caret line="7" column="8" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
           <folding />
         </state>
       </provider>
