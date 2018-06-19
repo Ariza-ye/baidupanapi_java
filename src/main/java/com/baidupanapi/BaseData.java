@@ -41,7 +41,7 @@ public class BaseData {
         apiTemplate = String.format("http://%s/api/%s", BAIDUPAN_SERVER,"%s");
     }
 
-    public static Map<String,String> errorMessageMap = new HashMap<>();
+    public static Map<String,String> errorMessageMap = new HashMap<String, String>();
     static{
         errorMessageMap.put("-1", "系统错误, 请稍后重试");
         errorMessageMap.put("1", "您输入的帐号格式不正确");

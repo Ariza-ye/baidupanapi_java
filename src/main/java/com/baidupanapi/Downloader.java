@@ -47,8 +47,8 @@ public class Downloader {
 
         deleteDir(new File(tempSavePath));
         new File(tempSavePath).mkdirs();
-        downloadPartStartPositionList = new ArrayList<>();
-        downloadingPartStartPositionList = new ArrayList<>();
+        downloadPartStartPositionList = new ArrayList<Integer>();
+        downloadingPartStartPositionList = new ArrayList<Integer>();
 
         String metaInfoString = HttpClientHelper.getResponseString(baiduPanService.getMetaInfo(Collections.singletonList(remotePath), null));
         JSONObject metaInfoJSONObject = JSON.parseObject(metaInfoString);
@@ -61,7 +61,7 @@ public class Downloader {
     }
 
     public void start(){
-        ArrayList<Thread> threadPools = new ArrayList<>();
+        ArrayList<Thread> threadPools = new ArrayList<Thread>();
         for(int i=0;i<5;i++){
             Thread thread = new Thread(new DownloadWorker());
             thread.start();
@@ -99,8 +99,8 @@ public class Downloader {
                 try{
                     int endPosition = startPosition+PART_SIZE-1;
 
-                    Map<String,Object> keyValueMap = new HashMap<>();
-                    Map<String,String> headers = new HashMap<>();
+                    Map<String,Object> keyValueMap = new HashMap<String, Object>();
+                    Map<String,String> headers = new HashMap<String, String>();
                     headers.put("Range",String.format("bytes=%s-%s",startPosition,endPosition));
                     keyValueMap.put("headers",headers);
                     baiduPanService.download(remotePath, keyValueMap).getEntity().writeTo(new FileOutputStream(new File(String.format("%s"+File.separator+"tmp-%d",tempSavePath,startPosition))));

@@ -52,12 +52,12 @@ public class BaseClass {
     protected String apiTemplate;
     protected String username;
     protected String password;
-    protected Map<String,String> user = new HashMap<>();
+    protected Map<String,String> user = new HashMap<String, String>();
 
     protected BaseRunnable captchaRunnable;
     protected BaseRunnable progressRunnable;
 
-    BaseClass(String username,String password,String apiTemplate,BaseRunnable captchaRunnable) throws Exception {
+    public BaseClass(String username,String password,String apiTemplate,BaseRunnable captchaRunnable) throws Exception {
         if(apiTemplate==null){
             apiTemplate = BaseData.apiTemplate;
         }
@@ -153,7 +153,7 @@ public class BaseClass {
         PublicKeyEntity publicKeyEntity = getPublickey();
         String passwordEncrypted = RSAUtils.encryptToBase64StringByPublicKey(RSAUtils.readPublicKey(publicKeyEntity.getPublicKey()),password);
         while (true){
-            Map<String,String> loginData = new HashMap<>();
+            Map<String,String> loginData = new HashMap<String, String>();
             loginData.put("staticpage","http://www.baidu.com/cache/user/html/v3Jump.html");
             loginData.put("charset", "UTF-8");
             loginData.put("token", user.get("token"));
@@ -248,13 +248,13 @@ public class BaseClass {
 
     protected CloseableHttpResponse request(String uri,String method, String url, Map<String,String> extraParams, Map<String,String> data, Map<String,File> files, BaseRunnable callback, Map<String,Object> keyValueArgs) throws IOException {
         if(keyValueArgs == null){
-            keyValueArgs = new HashMap<>();
+            keyValueArgs = new HashMap<String, Object>();
         }
 
         CloseableHttpResponse response;
         String api;
 
-        Map<String,String> params = new HashMap<>();
+        Map<String,String> params = new HashMap<String, String>();
         params.put("method",method);
         params.put("app_id","250528");
         params.put("BDUSS",user.get("BDUSS"));
@@ -266,7 +266,7 @@ public class BaseClass {
             MapUtil.removeNullPair(params);
         }
 
-        Map<String,String> headers = new HashMap<>();
+        Map<String,String> headers = new HashMap<String, String>();
         headers.putAll(BaseData.baidupanHeaders);
         if(keyValueArgs.containsKey("headers")){
             MapUtil.updateMap(headers, (Map) keyValueArgs.get("headers"));
@@ -316,7 +316,7 @@ public class BaseClass {
             InputStreamReader isr = new InputStreamReader(System.in);
             BufferedReader br = new BufferedReader(isr);
             String verifyCode = br.readLine();
-            resultList = new ArrayList<>();
+            resultList = new ArrayList<Object>();
             resultList.add(verifyCode);
             return resultList;
         }

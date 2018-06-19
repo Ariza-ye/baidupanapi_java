@@ -21,7 +21,7 @@ import java.util.Map;
  * @author  xm
  */
 public class BaiduPanService extends BaseClass{
-    BaiduPanService(String username, String password, BaseRunnable captchaRunnable) throws Exception {
+    public BaiduPanService(String username, String password, BaseRunnable captchaRunnable) throws Exception {
         super(username, password, BaseData.apiTemplate, captchaRunnable);
     }
 
