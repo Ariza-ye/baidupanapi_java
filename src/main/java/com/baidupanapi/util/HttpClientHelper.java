@@ -75,14 +75,14 @@ public class HttpClientHelper {
         System.out.println("data null?:"+(fileMap==null));
 
         if(params == null){
-            params = new HashMap<>();
+            params = new HashMap<String, String>();
         }
         HttpPost httpost = new HttpPost(url);
         for(Map.Entry<String,String> entry:headers.entrySet()){
             httpost.setHeader(entry.getKey(),entry.getValue());
         }
         if(fileMap == null) {
-            List<NameValuePair> nvps = new ArrayList<>();
+            List<NameValuePair> nvps = new ArrayList<NameValuePair>();
             Set<String> keySet = params.keySet();
             for (String key : keySet) {
                 nvps.add(new BasicNameValuePair(key, params.get(key)));

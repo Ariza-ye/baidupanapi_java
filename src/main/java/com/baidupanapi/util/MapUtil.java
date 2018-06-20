@@ -13,7 +13,7 @@ public class MapUtil {
     public static final String CHARSET = "utf-8";
 
     public static void removeNullPair(Map map){
-        List<Object> nullPairKeyList = new ArrayList<>();
+        List<Object> nullPairKeyList = new ArrayList<Object>();
         for(Object key:map.keySet()){
             if("".equals(key) || map.get(key) == null){
                 nullPairKeyList.add(key);

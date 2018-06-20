@@ -4,20 +4,20 @@
 
 -------------------
 
-###代码来源 
+###  代码来源 
 https://github.com/xm0625/BaiduPanApi-Java/
 
 (因作者不再维护，copy代码新启项目。如有侵权，联系删除)
 
 
-###项目简介
+###  项目简介
 项目基于latyas(懒)(latyas@gmail.com)的baidupcsapi项目(python).去除项目名称中的PCS改为baidupan,完成原作者改名的愿望
 
-###原项目
+###  原项目
 https://github.com/ly0/baidupcsapi/
 
-###文档
+###  文档
 http://baidupcsapi.readthedocs.org/
 
-###开发环境
+###  开发环境
 IDEA maven

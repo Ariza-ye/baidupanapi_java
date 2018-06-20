@@ -78,7 +78,7 @@ public class BaseData {
 
     public static String getPublicKeyApi(String token){
         try {
-            URLEncoder.encode(token, "UTF-8");
+            token = URLEncoder.encode(token, "UTF-8");
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }

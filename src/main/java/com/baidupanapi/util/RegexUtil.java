@@ -13,7 +13,7 @@ public class RegexUtil {
     public static List<String> findAll(String content,String regex,int group){
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(content);
-        List<String> resultList = new ArrayList<>();
+        List<String> resultList = new ArrayList<String>();
         while(matcher.find()) {
             resultList.add(matcher.group(group));
         }
