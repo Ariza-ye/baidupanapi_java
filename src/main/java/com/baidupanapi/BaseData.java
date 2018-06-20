@@ -8,6 +8,8 @@ import com.baidupanapi.util.TimeUtil;
 
 import java.io.File;
 import java.io.FileOutputStream;
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
 import java.util.*;
 
 public class BaseData {
@@ -75,6 +77,11 @@ public class BaseData {
     }
 
     public static String getPublicKeyApi(String token){
+        try {
+            URLEncoder.encode(token, "UTF-8");
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
         return String.format(BaseData.GET_PUBLICKEY_API,token);
     }
 

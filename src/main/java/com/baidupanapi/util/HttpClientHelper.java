@@ -44,11 +44,6 @@ public class HttpClientHelper {
 
     public static CloseableHttpResponse get(CloseableHttpClient httpClient, String url, Map<String, String> params, Map<String, String> headers) throws IOException {
 
-        System.out.println("url:"+url);
-        System.out.println("params:"+ MapUtil.getEncodedUrl(params));
-        System.out.println("headers:"+ MapUtil.getEncodedUrl(headers));
-
-
         String urlParamString = MapUtil.getEncodedUrl(params);
         if(urlParamString.length()>0){
             if(url.contains("?")){
@@ -57,6 +52,10 @@ public class HttpClientHelper {
                 url = String.format("%s?%s",url,urlParamString);
             }
         }
+        System.out.println("url:"+url);
+        System.out.println("params:"+ MapUtil.getEncodedUrl(params));
+        System.out.println("headers:"+ MapUtil.getEncodedUrl(headers));
+
         HttpGet httpGet = new HttpGet(url);
         for(Map.Entry<String,String> entry:headers.entrySet()){
             httpGet.setHeader(entry.getKey(),entry.getValue());
@@ -65,7 +64,7 @@ public class HttpClientHelper {
     }
 
     public static CloseableHttpResponse get(CloseableHttpClient httpClient, String url) throws IOException {
-        return get(httpClient, url,new HashMap<>(),new HashMap<>());
+        return get(httpClient, url,new HashMap<String, String>(),new HashMap<String, String>());
     }
 
     public static CloseableHttpResponse post(CloseableHttpClient httpClient, String url, Map<String, String> params,Map<String,File> fileMap,Map<String, String> headers) throws IOException {
@@ -113,7 +112,7 @@ public class HttpClientHelper {
 
 
         public static CloseableHttpResponse post(CloseableHttpClient httpClient, String url,Map<String, String> params) throws IOException {
-        return post(httpClient, url, params, new HashMap<>());
+        return post(httpClient, url, params, new HashMap<String, String>());
     }
 
 

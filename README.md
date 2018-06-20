@@ -1,9 +1,13 @@
-# baidupanapi_java
+## 百度网盘API JAVA版
+
+### baidupanapi_java 
 
 -------------------
 
-###项目参考 
+###代码来源 
 https://github.com/xm0625/BaiduPanApi-Java/
+
+(因作者不再维护，copy代码新启项目。如有侵权，联系删除)
 
 
 ###项目简介
@@ -16,4 +20,4 @@ https://github.com/ly0/baidupcsapi/
 http://baidupcsapi.readthedocs.org/
 
 ###开发环境
-IDEA
+IDEA maven
