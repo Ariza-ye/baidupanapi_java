@@ -7,7 +7,7 @@
 ### 代码来源 
 https://github.com/xm0625/BaiduPanApi-Java/
 
-(因作者不再维护，copy代码新启项目。如有侵权，联系删除)
+(因作者不再维护，copy代码新启项目。 欢迎有兴趣的同仁贡献代码)
 
 
 ### 项目简介
@@ -28,7 +28,7 @@ IDEA maven
 
 ### 运行demo
 导入工程        
-打开项目的 src/main/test/com/baidupanapi/BaiduPanServiceTest.java
+打开项目的 src/main/test/java/com/baidupanapi/BaiduPanServiceTest.java
 
 ### 一些简单的例子
 

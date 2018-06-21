@@ -126,15 +126,58 @@ public class BaseClass {
         }
     }
 
-    protected boolean loadCookies(){
+    protected boolean loadCookies() {
         System.out.println("加载已存在的Cookie");
+        String cookiesFilePath = BaseData.getCookiesFilePath(username);
+        ObjectInputStream ois = null;
 
+        try {
+            FileInputStream fs = new FileInputStream(cookiesFilePath);
+            ois = new ObjectInputStream(fs);
+            cookieStore = (CookieStore) ois.readObject(); // 读取 cookies
+            user.put("BDUSS", CookieStoreHelper.get(cookieStore,"BDUSS"));
+            user.put("token", getToken());
+        } catch (IOException e) {
+            System.out.println("cookies 文件不存在");
+            return  false; // 文件路径不存在
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (ois!=null){
+                    ois.close();
+                }
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
+        return true;
         //没有已存在的cookie则返回false
-        return false;
+
     }
 
-    protected void saveCookies(){
+    protected void saveCookies() throws IOException {
         System.out.println("保存Cookie");
+        String cookiesFilePath = BaseData.getCookiesFilePath(username);
+        CookieStore cookieStore = new BasicCookieStore();
+        ObjectOutputStream os = null;
+        try {
+            FileOutputStream fs = new FileOutputStream(cookiesFilePath);
+            os =  new ObjectOutputStream(fs);
+            os.writeObject(cookieStore);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (os!=null){
+                    os.close();
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
     protected void clearCookies(){

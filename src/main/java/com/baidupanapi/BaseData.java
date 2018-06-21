@@ -8,12 +8,23 @@ import com.baidupanapi.util.TimeUtil;
 
 import java.io.File;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.util.*;
 
 public class BaseData {
-
+    /** 初始化配置文件 */
+    private static  Properties prop = new Properties();
+    static {
+        try {
+            prop.load(BaseData.class.getResourceAsStream("/config.properties"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    /** cookies 存放的路径 */
+    private static String cookiesFilePath = prop.getProperty("cookies_file_path");
     /** 所有API URL **/
     /** 获取最快的pcs服务器 **/
     public static final String GET_FASTEST_PCS_SERVER_API = "http://pcs.baidu.com/rest/2.0/pcs/file?app_id=250528&method=locateupload";
@@ -84,5 +95,14 @@ public class BaseData {
         }
         return String.format(BaseData.GET_PUBLICKEY_API,token);
     }
-
+    /**
+     * 获取 cookies 存放的路径
+     * @param fileName
+     * 传入的文件名称
+     * @return
+     * 完成的路径
+     */
+    public static String getCookiesFilePath(String fileName){
+        return cookiesFilePath + fileName.trim() + ".cookies";
+    }
 }
