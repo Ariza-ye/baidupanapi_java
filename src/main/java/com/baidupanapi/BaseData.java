@@ -56,6 +56,7 @@ public class BaseData {
 
     public static Map<String,String> errorMessageMap = new HashMap<String, String>();
     static{
+        errorMessageMap.put("-6", "token 无效");
         errorMessageMap.put("-1", "系统错误, 请稍后重试");
         errorMessageMap.put("1", "您输入的帐号格式不正确");
         errorMessageMap.put("3", "验证码不存在或已过期,请重新输入");

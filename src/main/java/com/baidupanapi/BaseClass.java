@@ -38,6 +38,9 @@ import javax.net.ssl.SSLSocket;
 import java.io.*;
 import java.net.URLConnection;
 import java.net.URLEncoder;
+import java.security.KeyManagementException;
+import java.security.KeyStoreException;
+import java.security.NoSuchAlgorithmException;
 import java.security.cert.CertificateException;
 import java.security.cert.X509Certificate;
 import java.util.*;
@@ -62,8 +65,7 @@ public class BaseClass {
         if(apiTemplate==null){
             apiTemplate = BaseData.apiTemplate;
         }
-
-        try {
+       try {
             //通过代理访问
 //            session = HttpClients.custom().useSystemProperties()
 //                    .setDefaultCookieStore(cookieStore).setProxy(new HttpHost("127.0.0.1", 4443)).setConnectionManager(HttpClientHelper.getSSLNoCheckConnectionManager())
@@ -121,8 +123,6 @@ public class BaseClass {
             HttpClientHelper.get(session,BaseData.COOKIES_INIT_API);
             user.put("token",getToken());
             login();
-        }else{
-            user.put("token",getToken());
         }
     }
 
@@ -135,6 +135,7 @@ public class BaseClass {
             FileInputStream fs = new FileInputStream(cookiesFilePath);
             ois = new ObjectInputStream(fs);
             cookieStore = (CookieStore) ois.readObject(); // 读取 cookies
+            session = HttpClients.custom().setDefaultCookieStore(cookieStore).build(); // 把 cookies 添加到 session 中
             user.put("BDUSS", CookieStoreHelper.get(cookieStore,"BDUSS"));
             user.put("token", getToken());
         } catch (IOException e) {
@@ -161,7 +162,6 @@ public class BaseClass {
     protected void saveCookies() throws IOException {
         System.out.println("保存Cookie");
         String cookiesFilePath = BaseData.getCookiesFilePath(username);
-        CookieStore cookieStore = new BasicCookieStore();
         ObjectOutputStream os = null;
         try {
             FileOutputStream fs = new FileOutputStream(cookiesFilePath);
@@ -236,7 +236,7 @@ public class BaseClass {
         checkAccountException(content);
 
         user.put("BDUSS", CookieStoreHelper.get(cookieStore,"BDUSS"));
-
+        user.put("token", getToken());
         saveCookies();
     }
 
