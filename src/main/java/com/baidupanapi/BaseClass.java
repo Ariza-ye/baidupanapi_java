@@ -182,6 +182,13 @@ public class BaseClass {
 
     protected void clearCookies(){
         System.out.println("清理Cookie");
+        String cookiesFilePath = BaseData.getCookiesFilePath(username);
+        try{
+            File file = new File(cookiesFilePath);
+            file.delete();
+        }catch(Exception e){
+            e.printStackTrace();
+        }
     }
 
     protected String getToken() throws IOException {

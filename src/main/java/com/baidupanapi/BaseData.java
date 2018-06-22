@@ -104,6 +104,6 @@ public class BaseData {
      * 完成的路径
      */
     public static String getCookiesFilePath(String fileName){
-        return cookiesFilePath + fileName.trim() + ".cookies";
+        return cookiesFilePath + "." +fileName.trim() + ".cookies";
     }
 }

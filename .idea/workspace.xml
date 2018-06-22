@@ -16,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TestBaiduPanService.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TestBaiduPanService.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/baidupanapi/TestBaiduPanService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="15" column="36" lean-forward="true" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+            <state relative-caret-position="147">
+              <caret line="19" column="26" lean-forward="false" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -28,11 +28,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseClass.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BaseData.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/baidupanapi/BaseData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="156">
+              <caret line="106" column="67" lean-forward="true" selection-start-line="106" selection-start-column="67" selection-end-line="106" selection-end-column="67" />
+              <folding>
+                <marker date="1529644395712" expanded="false" signature="2283:2299" ph="&lt;~&gt;" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseClass.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/baidupanapi/BaseClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="128" column="33" lean-forward="false" selection-start-line="128" selection-start-column="22" selection-end-line="128" selection-end-column="33" />
+            <state relative-caret-position="130">
+              <caret line="163" column="58" lean-forward="true" selection-start-line="163" selection-start-column="58" selection-end-line="163" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -86,9 +98,9 @@
         <option value="$PROJECT_DIR$/src/test/java/com/baidupanapi/BaiduPanServiceTest.java" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/resources/config.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/baidupanapi/BaseData.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/baidupanapi/TestBaiduPanService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/baidupanapi/BaseClass.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/baidupanapi/BaseData.java" />
       </list>
     </option>
   </component>
@@ -140,53 +152,6 @@
             <path>
               <item name="baidupanapi_java" type="b2602c69:ProjectViewProjectNode" />
               <item name="baidupanapi_java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="baidupanapi_java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="baidupanapi_java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="baidupanapi_java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="baidupanapi_java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="baidupanapi_java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="baidupanapi_java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="baidupanapi_java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="baidupanapi_java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="baidupanapi" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="baidupanapi_java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="baidupanapi_java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="baidupanapi_java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="baidupanapi_java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="baidupanapi_java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="baidupanapi_java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="baidupanapi" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="baidupanapi_java" type="b2602c69:ProjectViewProjectNode" />
@@ -435,9 +400,9 @@
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Application.TestBaiduPanService" />
-        <item index="1" class="java.lang.String" itemvalue="Application.BaiduPanServiceTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.TestBaiduPanService.test1" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.TestBaiduPanService.test2" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TestBaiduPanService.test2" />
+        <item index="2" class="java.lang.String" itemvalue="Application.BaiduPanServiceTest" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.TestBaiduPanService.test1" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.TestBaiduPanService.test" />
       </list>
     </recent_temporary>
@@ -455,7 +420,7 @@
       <workItem from="1529425408790" duration="6970000" />
       <workItem from="1529472397357" duration="24964000" />
       <workItem from="1529591827091" duration="18835000" />
-      <workItem from="1529637259382" duration="5946000" />
+      <workItem from="1529637259382" duration="6918000" />
     </task>
     <servers />
   </component>
@@ -484,13 +449,15 @@
     <history-entry file="TestBaiduPanService_test2 - 2018.06.21 at 02h 52m 09s.xml">
       <configuration name="TestBaiduPanService.test2" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestBaiduPanService_test2 - 2018.06.22 at 13h 12m 08s.xml">
+      <configuration name="TestBaiduPanService.test2" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56715000" />
+    <option name="totallyTimeSpent" value="57687000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -505,10 +472,10 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23899849" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23899849" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.108497724" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25341427" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25341427" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -831,18 +798,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/baidupanapi/BaseData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="35" column="32" lean-forward="false" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
-          <folding>
-            <element signature="e#3781#3782#0" expanded="true" />
-            <element signature="e#3867#3868#0" expanded="true" />
-            <marker date="1529609797512" expanded="false" signature="2283:2299" ph="&lt;~&gt;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/baidupanapi/runnable/base/BaseRunnable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -928,21 +883,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/baidupanapi/TestBaiduPanService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/baidupanapi/BaseClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="15" column="36" lean-forward="true" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+        <state relative-caret-position="130">
+          <caret line="163" column="58" lean-forward="true" selection-start-line="163" selection-start-column="58" selection-end-line="163" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/baidupanapi/BaseData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="106" column="67" lean-forward="true" selection-start-line="106" selection-start-column="67" selection-end-line="106" selection-end-column="67" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1529644395712" expanded="false" signature="2283:2299" ph="&lt;~&gt;" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/baidupanapi/BaseClass.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/baidupanapi/TestBaiduPanService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="128" column="33" lean-forward="false" selection-start-line="128" selection-start-column="22" selection-end-line="128" selection-end-column="33" />
-          <folding />
+        <state relative-caret-position="147">
+          <caret line="19" column="26" lean-forward="false" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
